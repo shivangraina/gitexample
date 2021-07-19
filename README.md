@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # example-programs
+=======
+# gitexample
+>>>>>>> shivang/feature/fix-folder-structure
 
 A Clojure library designed to ... well, that part is up to you.
 
