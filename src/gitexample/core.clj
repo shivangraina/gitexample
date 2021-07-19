@@ -1,6 +1,7 @@
 
-(ns example-programs.core)
+(ns gitexample.core)
 (require '[clojure.string :as str])
+
 
 ;; Program 1
 
@@ -13,11 +14,14 @@
         (zero? (rem n 5))
         "BUZZ"
         :else n))
+
+
 (defn generate-fizzbuzz
   [n]
   (map fizzbuzz (range 1 (inc n))))
 
-;;Program 2
+
+;; Program 2
 
 (defn first-n-fibonacci
   [n]
@@ -32,24 +36,29 @@
              (+ a b)
              (inc count)))))
 
+
 (defn get-first-n-fibonacci
   [n]
   (apply list (first-n-fibonacci n)))
 
 
 ;; Program 3: finding frequency of each word in a string
+
 (defn split
   [string]
   (str/split string #" "))
 
+
 (defn count-freq
-  [string word]
-  (count (filter #{word} (split string))))
+  [wordlist word]
+  (count (filter #{word} wordlist)))
+
 
 (defn get-frequency-count
-  [wordlist]
-  (into {}
-        (map #(vector % (count-freq wordlist %))
-             (into #{} wordlist))))
+  [string]
+  (let [wordlist (split string)]
+    (into {}
+          (map #(vector % (count-freq wordlist %))
+               (into #{} wordlist)))))
 
 

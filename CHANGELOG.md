@@ -5,11 +5,9 @@ All notable changes to this project will be documented in this file. This change
 ### Changed
 - Add a new arity to `make-widget-async` to provide a different widget shape.
 
-<<<<<<< HEAD
-## [0.1.1] - 2021-07-15
-=======
+
 ## [0.1.1] - 2021-07-18
->>>>>>> shivang/feature/fix-folder-structure
+
 ### Changed
 - Documentation on how to make the widgets.
 
@@ -19,19 +17,13 @@ All notable changes to this project will be documented in this file. This change
 ### Fixed
 - Fixed widget maker to keep working when daylight savings switches over.
 
-<<<<<<< HEAD
-## 0.1.0 - 2021-07-15
-=======
+
 ## 0.1.0 - 2021-07-18
->>>>>>> shivang/feature/fix-folder-structure
+
 ### Added
 - Files from the new template.
 - Widget maker public API - `make-widget-sync`.
 
-<<<<<<< HEAD
-[Unreleased]: https://sourcehost.site/your-name/example-programs/compare/0.1.1...HEAD
-[0.1.1]: https://sourcehost.site/your-name/example-programs/compare/0.1.0...0.1.1
-=======
 [Unreleased]: https://sourcehost.site/your-name/gitexample/compare/0.1.1...HEAD
 [0.1.1]: https://sourcehost.site/your-name/gitexample/compare/0.1.0...0.1.1
->>>>>>> shivang/feature/fix-folder-structure
+
